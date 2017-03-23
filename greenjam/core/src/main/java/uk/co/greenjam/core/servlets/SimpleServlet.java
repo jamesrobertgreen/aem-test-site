@@ -32,7 +32,7 @@ import java.io.IOException;
  * idempotent. For write operations use the {@link SlingAllMethodsServlet}.
  */
 @SuppressWarnings("serial")
-@SlingServlet(resourceTypes = "greenjam/structure/page")
+@SlingServlet(resourceTypes = "greenjam/structure/page", paths="/bin/SimpleServlet",methods = "GET", metatype=true)
 public class SimpleServlet extends SlingSafeMethodsServlet {
 
     @Override
